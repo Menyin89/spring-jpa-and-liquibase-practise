@@ -15,5 +15,5 @@ data class Department(
     private val id: Long,
 
     @NotNull
-    private val name: String
+    private val title: String
 )
