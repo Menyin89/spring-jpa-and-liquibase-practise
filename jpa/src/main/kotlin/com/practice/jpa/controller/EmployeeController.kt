@@ -11,7 +11,7 @@ import org.springframework.web.util.UriComponentsBuilder
 
 
 @RestController
-@RequestMapping("/api/employees")
+@RequestMapping("/api/employee")
 class EmployeeController(
     private val employeesService: EmployeeService
 ) {
