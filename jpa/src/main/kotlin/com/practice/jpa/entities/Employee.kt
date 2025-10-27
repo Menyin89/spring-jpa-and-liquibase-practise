@@ -4,6 +4,8 @@ import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
+import jakarta.persistence.JoinColumn
+import jakarta.persistence.ManyToOne
 import jakarta.persistence.Table
 import org.jetbrains.annotations.NotNull
 
@@ -16,4 +18,9 @@ data class Employee(
 
     @NotNull
     private val name: String,
+
+    @NotNull
+    @ManyToOne
+    @JoinColumn(name = "department_id")
+    private val department: Department
 )
